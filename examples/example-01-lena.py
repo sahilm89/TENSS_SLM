@@ -52,3 +52,4 @@ while True:
        time.sleep(1)
        print(np.max(testIMG))
 slm.close()
+
