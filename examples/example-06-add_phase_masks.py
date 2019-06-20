@@ -13,6 +13,7 @@ import numpy as np
 import slmPy
 
 monitor = 1
+
 phase_files = np.array([np.load(i) for i in sys.argv[1:]])
 phase_mask = np.sum(phase_files, axis=0)
 correctionFactor = 123 

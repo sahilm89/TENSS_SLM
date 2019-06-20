@@ -17,6 +17,7 @@ writeFile = sys.argv[2]
 img = cv2.imread(filename, cv2.IMREAD_GRAYSCALE)
 img = img.astype(float)
 img = np.asarray(img, float)
+print(np.max(img))
 max_iters = 100
 phase_mask = Ger_Sax_algo(img, max_iters)
 plt.figure(1)
